@@ -1,1 +1,9 @@
-Middle
+<h2>Recently Added</h2>
+<div>
+    <% books.forEach(book => { %>
+        <% if (book.coverImagePath) { %>
+           <img height="150" width="170" src="<%= book.coverImagePath %>">
+        <% } %>
+     <% }) %>
+     
+</div>
